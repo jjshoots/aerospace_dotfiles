@@ -106,10 +106,10 @@ automatically-unhide-macos-hidden-apps = true
 # MONITOR-WORKSPACE ASSIGNMENT
 #####################################################
 [workspace-to-monitor-force-assignment]
-    1 = [2, 1]  # shell
-    2 = [2, 1]
-    3 = [1]     # browser
-    4 = [1]
+    1 = [1]     # browser
+    2 = [1]
+    3 = [2, 1]  # shell
+    4 = [2, 1]
     5 = [3, 1]  # spotify
     6 = [3, 1]  # calendar
     7 = [3, 1]  # mail
@@ -121,33 +121,34 @@ automatically-unhide-macos-hidden-apps = true
 # AUTO APP TO WORKSPACE
 #####################################################
 [[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
+if.app-id = 'com.brave.Browser'
 run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id = 'com.brave.Browser'
+if.app-id = 'net.kovidgoyal.kitty'
 run = ['layout tiling', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = ['layout tiling', 'move-node-to-workspace 10']
+if.app-id = 'com.spotify.client'
+run = ['layout tiling', 'move-node-to-workspace 5']
 
 [[on-window-detected]]
-if.app-id = 'com.linear'
-run = ['layout tiling', 'move-node-to-workspace 9']
+if.app-id = 'com.apple.iCal'
+run = ['layout tiling', 'move-node-to-workspace 6']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
 if.app-id = 'notion.id'
 run = ['layout tiling', 'move-node-to-workspace 8']
 
 [[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = ['layout tiling', 'move-node-to-workspace 7']
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = ['layout tiling', 'move-node-to-workspace 6']
+if.app-id = 'com.linear'
+run = ['layout tiling', 'move-node-to-workspace 9']
 
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = ['layout tiling', 'move-node-to-workspace 5']
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = ['layout tiling', 'move-node-to-workspace 10']
 
