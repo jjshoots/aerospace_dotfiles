@@ -3,7 +3,7 @@ start-at-login = true
 after-login-command = []
 
 after-startup-command = [
-  'exec-and-forget borders active_color=0xff18f4d3 inactive_color=0x00000000 width=8.0',
+  'exec-and-forget borders active_color=0xfffff11f inactive_color=0x00000000 width=8.0',
 ]
 
 enable-normalization-flatten-containers = true
@@ -66,7 +66,7 @@ automatically-unhide-macos-hidden-apps = true
 
     # move to monitor
     cmd-p = 'move-node-to-monitor next --focus-follows-window --wrap-around'
-    cmd-shift-p = 'move-node-to-monitor next --focus-follows-window --wrap-around'
+    cmd-shift-p = 'move-node-to-monitor prev --focus-follows-window --wrap-around'
 
     cmd-shift-minus = 'resize smart -50'
     cmd-shift-equal = 'resize smart +50'
