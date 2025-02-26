@@ -35,8 +35,10 @@ automatically-unhide-macos-hidden-apps = true
     #######################################
     # APP HOTKEYS
     #######################################
-    cmd-t = '''exec-and-forget env KITTY_WINDOW_ID=new-instance open -na "kitty"'''
+    cmd-shift-t = '''exec-and-forget env KITTY_WINDOW_ID=new-instance open -na "kitty"'''
+    cmd-t = '''exec-and-forget open -a "kitty"'''
     cmd-b = '''exec-and-forget open -a "Brave Browser"'''
+    cmd-e = '''exec-and-forget open -a "Finder"'''
 
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion horizontal vertical'
@@ -65,8 +67,10 @@ automatically-unhide-macos-hidden-apps = true
 
 
     # move to monitor
-    cmd-p = 'move-node-to-monitor next --focus-follows-window --wrap-around'
-    cmd-shift-p = 'move-node-to-monitor prev --focus-follows-window --wrap-around'
+    cmd-o = 'move-node-to-monitor next --focus-follows-window --wrap-around'
+    cmd-i = 'move-node-to-monitor prev --focus-follows-window --wrap-around'
+    cmd-shift-i = 'move left'
+    cmd-shift-o = 'move left'
 
     cmd-shift-minus = 'resize smart -50'
     cmd-shift-equal = 'resize smart +50'
