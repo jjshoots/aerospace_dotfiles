@@ -70,7 +70,7 @@ automatically-unhide-macos-hidden-apps = true
     cmd-o = 'move-node-to-monitor next --focus-follows-window --wrap-around'
     cmd-i = 'move-node-to-monitor prev --focus-follows-window --wrap-around'
     cmd-shift-i = 'move left'
-    cmd-shift-o = 'move left'
+    cmd-shift-o = 'move right'
 
     cmd-shift-minus = 'resize smart -50'
     cmd-shift-equal = 'resize smart +50'
