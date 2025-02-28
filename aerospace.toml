@@ -129,20 +129,20 @@ if.app-id = 'com.brave.Browser'
 run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
+if.app-id = 'com.apple.iCal'
+run = ['layout tiling', 'move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
 run = ['layout tiling', 'move-node-to-workspace 3']
+
+[[on-window-detected]]
+if.app-id = 'net.kovidgoyal.kitty'
+run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = ['layout tiling', 'move-node-to-workspace 5']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = ['layout tiling', 'move-node-to-workspace 6']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
 if.app-id = 'notion.id'
