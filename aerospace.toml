@@ -65,7 +65,6 @@ automatically-unhide-macos-hidden-apps = true
     cmd-alt-h = ['move-node-to-workspace prev --focus-follows-window']
     cmd-alt-l = ['move-node-to-workspace next --focus-follows-window']
 
-
     # move to monitor
     cmd-o = 'move-node-to-monitor next --focus-follows-window --wrap-around'
     cmd-i = 'move-node-to-monitor prev --focus-follows-window --wrap-around'
@@ -75,13 +74,9 @@ automatically-unhide-macos-hidden-apps = true
     cmd-shift-minus = 'resize smart -50'
     cmd-shift-equal = 'resize smart +50'
 
-    cmd-enter = 'mode move_node'
     cmd-shift-enter = 'mode service'
 
-[mode.move_node.binding]
-    #####################################################
-    # WINDOW MOVEMENT
-    #####################################################
+[mode.service.binding]
     h = 'move left'
     j = 'move down'
     k = 'move up'
@@ -97,9 +92,6 @@ automatically-unhide-macos-hidden-apps = true
     9 = 'move-node-to-workspace --focus-follows-window 9'
     0 = 'move-node-to-workspace --focus-follows-window 10'
 
-    esc = ['mode main']
-
-[mode.service.binding]
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main']
     f = ['layout floating tiling', 'mode main']
