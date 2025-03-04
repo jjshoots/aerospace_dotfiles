@@ -77,10 +77,6 @@ automatically-unhide-macos-hidden-apps = true
     cmd-shift-enter = 'mode service'
 
 [mode.service.binding]
-    h = 'move left'
-    j = 'move down'
-    k = 'move up'
-    l = 'move right'
     1 = 'move-node-to-workspace --focus-follows-window 1'
     2 = 'move-node-to-workspace --focus-follows-window 2'
     3 = 'move-node-to-workspace --focus-follows-window 3'
