@@ -139,6 +139,10 @@ if.app-id = 'com.spotify.client'
 run = ['layout tiling', 'move-node-to-workspace 5']
 
 [[on-window-detected]]
+if.app-id = 'com.gather.GatherV2'
+run = ['layout tiling', 'move-node-to-workspace 7']
+
+[[on-window-detected]]
 if.app-id = 'notion.id'
 run = ['layout tiling', 'move-node-to-workspace 8']
 
