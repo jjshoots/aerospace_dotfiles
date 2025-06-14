@@ -122,6 +122,9 @@ run = ['layout tiling', 'move-node-to-workspace 2']
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = ['layout tiling', 'move-node-to-workspace 2']
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
+run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
