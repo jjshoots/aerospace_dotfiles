@@ -60,6 +60,16 @@ automatically-unhide-macos-hidden-apps = true
     cmd-8 = ['workspace 8']
     cmd-9 = ['workspace 9']
     cmd-0 = ['workspace 10']
+    cmd-shift-1 = ['workspace 11']
+    cmd-shift-2 = ['workspace 12']
+    cmd-shift-3 = ['workspace 13']
+    cmd-shift-4 = ['workspace 14']
+    cmd-shift-5 = ['workspace 15']
+    cmd-shift-6 = ['workspace 16']
+    cmd-shift-7 = ['workspace 17']
+    cmd-shift-8 = ['workspace 18']
+    cmd-shift-9 = ['workspace 19']
+    cmd-shift-0 = ['workspace 20']
     cmd-ctrl-h = ['workspace prev']
     cmd-ctrl-l = ['workspace next']
     cmd-alt-h = ['move-node-to-workspace prev --focus-follows-window']
@@ -108,22 +118,34 @@ automatically-unhide-macos-hidden-apps = true
     8 = [3, 1]  # notion
     9 = [3, 1]  # linear
     0 = [3, 1]  # slack
+    11 = [1]     # browser
+    12 = [1]     # mail, calendar
+    13 = [2, 1]  # shell
+    14 = [2, 1]
+    15 = [3, 1]  # spotify
+    16 = [3, 1]
+    17 = [3, 1]
+    18 = [3, 1]  # notion
+    19 = [3, 1]  # linear
+    10 = [3, 1]  # slack
 
 #####################################################
 # AUTO APP TO WORKSPACE
 #####################################################
+# Monitor 1
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
 run = ['layout tiling', 'move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = ['layout tiling', 'move-node-to-workspace 2']
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ['layout tiling', 'move-node-to-workspace 2']
+run = ['layout tiling', 'move-node-to-workspace 11']
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
+run = ['layout tiling', 'move-node-to-workspace 11']
+
+# Monitor 2
+[[on-window-detected]]
+if.app-id = 'com.todesktop.230313mzl4w4u92'
 run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
@@ -131,20 +153,13 @@ if.app-id = 'net.kovidgoyal.kitty'
 run = ['layout tiling', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
-if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = ['layout tiling', 'move-node-to-workspace 4']
-
-[[on-window-detected]]
 if.app-id = 'com.jetbrains.datagrip'
 run = ['layout tiling', 'move-node-to-workspace 4']
 
+# Monitor 3
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = ['layout tiling', 'move-node-to-workspace 5']
-
-[[on-window-detected]]
-if.app-id = 'com.gather.GatherV2'
-run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
 if.app-id = 'notion.id'
@@ -158,3 +173,6 @@ run = ['layout tiling', 'move-node-to-workspace 9']
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = ['layout tiling', 'move-node-to-workspace 10']
 
+[[on-window-detected]]
+if.app-id = 'com.gather.GatherV2'
+run = ['layout tiling', 'move-node-to-workspace 20']
