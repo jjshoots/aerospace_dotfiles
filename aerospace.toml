@@ -97,6 +97,16 @@ automatically-unhide-macos-hidden-apps = true
     8 = 'move-node-to-workspace --focus-follows-window 8'
     9 = 'move-node-to-workspace --focus-follows-window 9'
     0 = 'move-node-to-workspace --focus-follows-window 10'
+    shift-1 = 'move-node-to-workspace --focus-follows-window 11'
+    shift-2 = 'move-node-to-workspace --focus-follows-window 12'
+    shift-3 = 'move-node-to-workspace --focus-follows-window 13'
+    shift-4 = 'move-node-to-workspace --focus-follows-window 14'
+    shift-5 = 'move-node-to-workspace --focus-follows-window 15'
+    shift-6 = 'move-node-to-workspace --focus-follows-window 16'
+    shift-7 = 'move-node-to-workspace --focus-follows-window 17'
+    shift-8 = 'move-node-to-workspace --focus-follows-window 18'
+    shift-9 = 'move-node-to-workspace --focus-follows-window 19'
+    shift-0 = 'move-node-to-workspace --focus-follows-window 20'
 
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main']
