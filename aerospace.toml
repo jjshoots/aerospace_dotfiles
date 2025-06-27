@@ -151,6 +151,9 @@ run = ['layout tiling', 'move-node-to-workspace 2']
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = ['layout tiling', 'move-node-to-workspace 3']
+[[on-window-detected]]
+if.app-id = 'com.electron.dockerdesktop'
+run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.datagrip'
