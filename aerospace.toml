@@ -70,6 +70,16 @@ automatically-unhide-macos-hidden-apps = true
     cmd-shift-8 = ['workspace 18']
     cmd-shift-9 = ['workspace 19']
     cmd-shift-0 = ['workspace 20']
+    cmd-ctrl-shift-1 = ['workspace 21']
+    cmd-ctrl-shift-2 = ['workspace 22']
+    cmd-ctrl-shift-3 = ['workspace 23']
+    cmd-ctrl-shift-4 = ['workspace 24']
+    cmd-ctrl-shift-5 = ['workspace 25']
+    cmd-ctrl-shift-6 = ['workspace 26']
+    cmd-ctrl-shift-7 = ['workspace 27']
+    cmd-ctrl-shift-8 = ['workspace 28']
+    cmd-ctrl-shift-9 = ['workspace 29']
+    cmd-ctrl-shift-0 = ['workspace 30']
     cmd-ctrl-h = ['workspace prev']
     cmd-ctrl-l = ['workspace next']
     cmd-alt-h = ['move-node-to-workspace prev --focus-follows-window']
@@ -107,6 +117,16 @@ automatically-unhide-macos-hidden-apps = true
     shift-8 = 'move-node-to-workspace --focus-follows-window 18'
     shift-9 = 'move-node-to-workspace --focus-follows-window 19'
     shift-0 = 'move-node-to-workspace --focus-follows-window 20'
+    ctrl-shift-1 = 'move-node-to-workspace --focus-follows-window 21'
+    ctrl-shift-2 = 'move-node-to-workspace --focus-follows-window 22'
+    ctrl-shift-3 = 'move-node-to-workspace --focus-follows-window 23'
+    ctrl-shift-4 = 'move-node-to-workspace --focus-follows-window 24'
+    ctrl-shift-5 = 'move-node-to-workspace --focus-follows-window 25'
+    ctrl-shift-6 = 'move-node-to-workspace --focus-follows-window 26'
+    ctrl-shift-7 = 'move-node-to-workspace --focus-follows-window 27'
+    ctrl-shift-8 = 'move-node-to-workspace --focus-follows-window 28'
+    ctrl-shift-9 = 'move-node-to-workspace --focus-follows-window 29'
+    ctrl-shift-0 = 'move-node-to-workspace --focus-follows-window 30'
 
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main']
@@ -118,26 +138,36 @@ automatically-unhide-macos-hidden-apps = true
 # MONITOR-WORKSPACE ASSIGNMENT
 #####################################################
 [workspace-to-monitor-force-assignment]
-    1 = [1]     # browser
-    2 = [1]     # mail, calendar
-    3 = [2, 1]  # shell
-    4 = [2, 1]
-    5 = [3, 1]  # spotify
+    1 = [1]       # browser, docker
+    2 = [1]       # cursor
+    3 = [2, 1]    # shell
+    4 = [2, 1]    # datagrip
+    5 = [3, 1]    # spotify
     6 = [3, 1]
     7 = [3, 1]
-    8 = [3, 1]  # notion
-    9 = [3, 1]  # linear
-    0 = [3, 1]  # slack
-    11 = [1]     # browser
-    12 = [1]     # mail, calendar
-    13 = [2, 1]  # shell
+    8 = [3, 1]    # notion
+    9 = [3, 1]    # linear
+    10 = [3, 1]    # slack
+    11 = [1]      # whatsapp, mail
+    12 = [1]
+    13 = [2, 1]
     14 = [2, 1]
-    15 = [3, 1]  # spotify
+    15 = [3, 1]
     16 = [3, 1]
     17 = [3, 1]
-    18 = [3, 1]  # notion
-    19 = [3, 1]  # linear
-    10 = [3, 1]  # slack
+    18 = [3, 1]
+    19 = [3, 1]
+    20 = [3, 1]   # gather
+    21 = [1]
+    22 = [1]
+    23 = [2, 1]
+    24 = [2, 1]
+    25 = [3, 1]
+    26 = [3, 1]
+    27 = [3, 1]
+    28 = [3, 1]
+    29 = [3, 1]
+    30 = [3, 1]
 
 #####################################################
 # AUTO APP TO WORKSPACE
@@ -147,6 +177,13 @@ automatically-unhide-macos-hidden-apps = true
 if.app-id = 'com.brave.Browser'
 run = ['layout tiling', 'move-node-to-workspace 1']
 [[on-window-detected]]
+if.app-id = 'com.electron.dockerdesktop'
+run = ['layout tiling', 'move-node-to-workspace 1']
+[[on-window-detected]]
+if.app-id = 'com.todesktop.230313mzl4w4u92'
+run = ['layout tiling', 'move-node-to-workspace 2']
+
+[[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = ['layout tiling', 'move-node-to-workspace 11']
 [[on-window-detected]]
@@ -155,15 +192,8 @@ run = ['layout tiling', 'move-node-to-workspace 11']
 
 # Monitor 2
 [[on-window-detected]]
-if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = ['layout tiling', 'move-node-to-workspace 2']
-
-[[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = ['layout tiling', 'move-node-to-workspace 3']
-[[on-window-detected]]
-if.app-id = 'com.electron.dockerdesktop'
-run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.datagrip'
