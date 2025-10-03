@@ -191,6 +191,9 @@ run = ['layout tiling', 'move-node-to-workspace 11']
 [[on-window-detected]]
 if.app-id = 'com.electron.dockerdesktop'
 run = ['layout tiling', 'move-node-to-workspace 21']
+[[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = ['layout tiling', 'move-node-to-workspace 21']
 
 # Monitor 2
 [[on-window-detected]]
