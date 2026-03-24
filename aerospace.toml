@@ -230,7 +230,3 @@ run = ['layout tiling', 'move-node-to-workspace 10']
 [[on-window-detected]]
 if.app-id = 'com.gather.GatherV2'
 run = ['layout tiling', 'move-node-to-workspace 20']
-
-[[on-window-detected]]
-if.app-id = 'net.runelite.launcher'
-run = ['layout tiling', 'move-node-to-workspace 20']
