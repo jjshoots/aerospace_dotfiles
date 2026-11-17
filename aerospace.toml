@@ -186,6 +186,9 @@ run = ['layout tiling', 'move-node-to-workspace 1']
 [[on-window-detected]]
 if.app-id = 'com.todesktop.230313mzl4w4u92'
 run = ['layout tiling', 'move-node-to-workspace 2']
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
